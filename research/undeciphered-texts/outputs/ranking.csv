@@ -1,0 +1,11 @@
+id,name,score_data,score_anchor,score_structure,score_validation,score_total,verdict
+khipu,Inka khipu semantic system,3,2,3,3,11,best structured-data target; not a conventional script
+linear_a,Linear A,3,1,3,3,10,best near-term reproducible research target
+mero_lexicon,Meroitic language lexicon,2,2,3,3,10,comparative linguistics target not cryptanalysis
+proto_elamite,Proto-Elamite,3,2,2,3,10,best domain-constrained target
+cypro_minoan,Cypro-Minoan,2,1,2,2,7,promising after corpus reconciliation
+voynich,Voynich Manuscript,3,0,3,1,7,excellent falsification benchmark; weak decipherment target
+indus,Indus script,2,0,2,2,6,strong science target but likely underdetermined
+rohonc,Rohonc Codex,1,0,2,1,4,needs open diplomatic transcription and material study
+phaistos,Phaistos Disc,2,0,1,0,3,too short for unique decipherment
+rongorongo,Rongorongo,1,0,1,1,3,preserve and image first
