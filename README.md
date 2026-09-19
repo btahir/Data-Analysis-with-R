@@ -1,10 +1,36 @@
 # Data-Analysis-with-R
 Analyzing Red Wine Quality
 
-## Additional research
+## Undeciphered historical texts research
 
-- [Undeciphered historical texts: evidence, datasets, and a reproducible path
-  to testing proposed solutions](research/undeciphered-texts/README.md)
+This repository now includes an
+[evidence-first investigation of undeciphered historical texts](research/undeciphered-texts/README.md).
+The project compares ten candidates—including the Voynich Manuscript, Linear A,
+Proto-Elamite, the Indus script, rongorongo, the Phaistos Disc, and khipus—and
+turns broad decipherment questions into testable research problems.
+
+### What we completed
+
+- Created a machine-readable [candidate dataset](research/undeciphered-texts/data/candidates.csv)
+  and [open-problems dataset](research/undeciphered-texts/data/open_problems.csv).
+- Defined an evidence and verification protocol based on frozen hypotheses,
+  held-out artifacts, external anchors, risky predictions, and independent
+  replication.
+- Added a dependency-free [Python prioritizer](research/undeciphered-texts/scripts/prioritize.py)
+  that validates candidate scores and reproducibly generates the
+  [candidate ranking](research/undeciphered-texts/outputs/ranking.csv).
+- Resolved the narrow Phaistos Disc problem **PD-01** by proving that its
+  intrinsic, label-invariant structure cannot uniquely determine sign values.
+  With 45 unanchored signs, `45!` bijective relabelings preserve the observed
+  equality patterns; this is a limitation result, **not** a decipherment. See
+  the [proof and its scope](research/undeciphered-texts/results/phaistos-nonidentifiability.md).
+- Added unit tests for candidate validation, ranking, exact permutation counts,
+  anchor thresholds, and invalid inputs.
+
+The current recommendation is to pursue khipu structured-data analysis, Linear
+A cross-site prediction, Proto-Elamite ledger reconstruction, and Meroitic
+linguistic work. The Voynich Manuscript is most useful initially as a benchmark
+for rejecting overfit methods.
 
 ### Where this work lives
 
@@ -22,5 +48,11 @@ To reproduce the new analysis from the repository root, run:
 
 ```bash
 python3 research/undeciphered-texts/scripts/prioritize.py
+python3 research/undeciphered-texts/scripts/phaistos_nonidentifiability.py
+python3 research/undeciphered-texts/scripts/phaistos_nonidentifiability.py --json
 python3 -m unittest discover -s research/undeciphered-texts/tests -v
 ```
+
+The complete methodology, source notes, candidate assessments, limitations, and
+next-step research plan are in the
+[project README](research/undeciphered-texts/README.md).
