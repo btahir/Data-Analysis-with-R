@@ -56,3 +56,8 @@ python3 -m unittest discover -s research/undeciphered-texts/tests -v
 The complete methodology, source notes, candidate assessments, limitations, and
 next-step research plan are in the
 [project README](research/undeciphered-texts/README.md).
+
+An expanded [Voynich Manuscript dossier](research/undeciphered-texts/voynich/README.md)
+maps the available images and transcriptions, historical-language context,
+competing theory families, falsification tests, and a staged breadth-first
+research program.

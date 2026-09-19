@@ -59,6 +59,10 @@ message purpose—exactly the kind of external validation ancient texts lack
 
 ### 1. Voynich Manuscript — rich data, almost no anchor
 
+For the expanded data inventory, historical context, theory registry, and
+breadth-first experimental program, see the dedicated
+[Voynich Manuscript research dossier](voynich/README.md).
+
 The Beinecke Library's **MS 408** record supplies provenance, a complete digital
 facsimile, and a conservative early-fifteenth-century date. Yale's material
 study found historic materials and no simple modern ink/pigment red flag; that
